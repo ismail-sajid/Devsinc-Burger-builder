@@ -1,0 +1,60 @@
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #703b09;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 90;
+}
+.logo_img_size {
+  width: 45px;
+  height: 28px;
+}
+.bg_space {
+  background-color: #fff;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.navigation_items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-flow: column;
+}
+
+.Navigationitem a:active,
+a:hover,
+a.active {
+  background-color: #8f5c2c;
+  border-bottom: 4px solid #40a4c8;
+  color: white;
+}
+
+.Navigationitem {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  padding: 16px 10px;
+  border-bottom: 4px solid transparent;
+  box-sizing: border-box;
+  display: block;
+}
+@media (min-width: 500px) {
+  .navigation_items {
+    flex-flow: row;
+  }
+}

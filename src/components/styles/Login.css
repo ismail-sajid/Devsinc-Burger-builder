@@ -1,0 +1,60 @@
+.Auth {
+  margin: 20px auto;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-value {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.input_lable {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+.Input__InputElement__3TB0k {
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pt {
+  padding-top: 100px;
+}
+
+.submit_button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+  color: #5c9210;
+}
+.signup_button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+  color: #944317;
+}
