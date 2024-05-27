@@ -1,4 +1,4 @@
-.Builder_container{
+.builder-container {
   width: 100%;
   background-color: #cf8f2e;
   display: flex;
@@ -11,9 +11,8 @@
   box-shadow: 0 2px 1px #ccc;
   margin: auto;
   padding: 10px 0;
-
 }
-.Ingredient_container{
+.ingredient-container {
   display: flex;
   flex-direction: column;
   -ms-flex-pack: justify;
@@ -23,20 +22,19 @@
   margin: 5px 0;
 }
 
-.Ingredient_item{
+.ingredient-item {
   display: flex;
   flex-direction: row;
   padding: 1rem;
 }
-.Button_less:disabled{
+.button-less:disabled {
   background-color: #ac9980;
   border: 1px solid #7e7365;
   color: #ccc;
   cursor: default;
 }
 
-.Button_less{
-  
+.button-less {
   display: inline-block;
   font: inherit;
   padding: 5px;
@@ -47,7 +45,7 @@
   outline: none;
 }
 
-.Button_more{
+.button-more {
   display: inline-block;
   font: inherit;
   padding: 5px;
@@ -57,12 +55,12 @@
   cursor: pointer;
   outline: none;
 }
-.Ingredient_text{
+.ingredient-text {
   padding: 10px;
   font-weight: 700;
   width: 80px;
 }
-.Signup{
+.signup {
   background-color: #dad735;
   outline: none;
   cursor: pointer;
@@ -74,7 +72,7 @@
   -webkit-box-shadow: 2px 2px 2px #966909;
   box-shadow: 2px 2px 2px #966909;
 }
-.Signup:disabled{
+.signup:disabled {
   background-color: #c7c6c6;
   cursor: not-allowed;
   border: 1px solid #ccc;

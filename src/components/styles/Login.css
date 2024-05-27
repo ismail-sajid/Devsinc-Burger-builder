@@ -13,12 +13,12 @@
   padding: 10px;
   box-sizing: border-box;
 }
-.input_lable {
+.input-lable {
   font-weight: 700;
   display: block;
   margin-bottom: 8px;
 }
-.Input__InputElement__3TB0k {
+.input-element {
   outline: none;
   border: 1px solid #ccc;
   background-color: #fff;
@@ -34,7 +34,7 @@
   padding-top: 100px;
 }
 
-.submit_button {
+.submit-button {
   background-color: transparent;
   border: none;
   color: #fff;
@@ -46,7 +46,7 @@
   font-weight: 700;
   color: #5c9210;
 }
-.signup_button {
+.signup-button {
   background-color: transparent;
   border: none;
   color: #fff;

@@ -1,33 +1,15 @@
 import React from "react";
-import Navbar from "./Navbar";
+import { Navbar } from "./Navbar";
 import "/home/dev/Practice React/test/src/components/styles/Login.css";
 import axios from "axios";
 import { useState } from "react";
 import validator from "validator";
 
-const Login = () => {
+export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const requestOptions = {
-      body: JSON.stringify({
-        email: email,
-        password: password,
-        headers: { "Content-Type": "application/json" },
-      }),
-    };
-    const config = {
-      header: {
-        "Content-Tyype": "application/json",
-      },
-    };
-    await axios
-      .post("https://jsonplaceholder.typicode.com/todos/", requestOptions)
-      .then((respose) => console.log(respose));
-  }
+  const [signinText, setSigninText] = useState(true);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -41,6 +23,9 @@ const Login = () => {
       }
     }
   };
+  const handleSigninText = () => {
+    setSigninText((prevState) => !prevState);
+  };
 
   return (
     <>
@@ -49,10 +34,10 @@ const Login = () => {
         <div className="Auth">
           <form>
             <div className="input-value ">
-              <label className="input_lable"></label>
+              <label className="input-lable"></label>
               <input
                 type="email"
-                class="Input__InputElement__3TB0k"
+                className="input-element"
                 placeholder="E-mail Address"
                 value={email}
                 name="email"
@@ -60,25 +45,23 @@ const Login = () => {
               ></input>
             </div>
             <div className="input-value ">
-              <label className="input_lable"></label>
+              <label className="input-lable"></label>
               <input
                 type="password"
-                class=" Input__InputElement__3TB0k"
+                className="input-element"
                 placeholder="Password"
                 name="password"
                 value={password}
                 onChange={handleInputChange}
               ></input>
             </div>
-            <button className=" submit_button" onClick={handleSubmit}>
-              SUBMIT
-            </button>
+            <button className="submit-button">SUBMIT</button>
           </form>
-          <button className="signup_button">SIGN IN</button>
+          <button onClick={handleSigninText} className="signup-button">
+            {signinText ? "SIGN IN" : "REGISTER"}
+          </button>
         </div>
       </div>
     </>
   );
 };
-
-export default Login;

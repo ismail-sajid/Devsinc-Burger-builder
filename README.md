@@ -1,5 +1,39 @@
-# This is the Burger Builder app which is made in React framework. This project was given to me by my company as a training practice in React. The app works fine, but there are some modifications needded and it can be improved.
+# Burger Builder App
 
-# Getting Started with Create React App
+This is a burger builder application built with React.js and Redux for state management. It allows users to customize their burgers by adding or removing ingredients and displays the total price of the burger dynamically.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+
+- Add and remove ingredients such as salad, bacon, cheese, and meat.
+- Dynamically updates the total price of the burger based on the selected ingredients.
+- Navigate between pages using React Router.
+- State management using Redux for managing ingredient prices.
+- Responsive design for various screen sizes.
+
+## Technologies Used
+
+- React.js
+- Redux
+- React Router
+- React Hooks
+- CSS Modules
+- Axios (for HTTP requests, if applicable)
+- Jest and React Testing Library (for testing, if applicable)
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps:
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/ismail-sajid/Devsinc-Burger-builder.git
+   ```
+
+2. Install the dependencies
+
+`npm install`
+
+3. Run the applicatoin
+
+   `npm start`

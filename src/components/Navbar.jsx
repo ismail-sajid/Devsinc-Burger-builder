@@ -1,36 +1,33 @@
 import "./styles/Navbar.css";
 import burgerLogo from "./styles/images/burger-logo.png";
 import React from "react";
-import Login from "./Login";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <header className="navbar navbar-expand-lg">
       <div className="container-fluid ">
-        <div className="Toolbar">
-          <nav className="bg_space">
-            <img src={burgerLogo} alt="myBurger" className="logo_img_size" />
+        <div className="toolbar">
+          <nav className="burger-logo-area">
+            <img src={burgerLogo} alt="myBurger" className="logo-img-size" />
           </nav>
-          <ul className="navigation_items">
-            <li className="NavigationItem__NavigationItem__3YSjr">
-              <NavLink
-                className="Navigationitem"
-                activeClassName="active"
-                exact
-                to="/"
-              >
-                Burger Builder{" "}
+          <ul className="navigation-items">
+            <li className="navigation-item">
+              <NavLink className={({ isActive }) => (isActive ? "navigation-link active" : "navigation-link")} to="/">
+                Burger Builder
               </NavLink>
             </li>
-            <NavLink className="Navigationitem" to="/login">
-              <li className="NavigationItem__NavigationItem__3YSjr">Login</li>
-            </NavLink>
+            <li className="navigation-item">
+              <NavLink
+                className={({ isActive }) => (isActive ? "navigation-link active" : "navigation-link")}
+                to="/login"
+              >
+                Login
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
     </header>
   );
 };
-
-export default Navbar;
